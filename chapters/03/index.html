@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Higher Order Component</title>
+
+  <title>Title</title>
+  <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+
+  <script src="HelloWorld.jsx" type="text/jsx" data-presets="es2015,react"></script>
+  <script src="Painter.jsx" type="text/jsx" data-presets="es2015,react"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="text/jsx" data-presets="es2015,react">
+    Hello = Painter(Hello);
+
+    ReactDOM.render(<Hello/>, document.getElementById('root'));
+
+  </script>
+</body>
+
+</html>
