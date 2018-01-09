@@ -14,9 +14,9 @@ Virtual DOM it is a JavaScript object in memory that represents what the website
 
 React is performant by itself, but by leveraging `lifecycle methods` we can improve that out of the box speed. 
 
-A good understanding of the lifecycle methods will allow us to ensure our components have the `right functionality` with the most `efficient amount of code` and help us `avoid quirky, asynchronous problems` involving state changes.
-
 <img width="1639" alt="screen shot 2018-01-09 at 2 04 50 am" src="https://user-images.githubusercontent.com/5876481/34715434-8c1c1550-f4e1-11e7-92e8-032de392488b.png">
+
+A good understanding of the lifecycle methods will allow us to ensure our components have the `right functionality` with the most `efficient amount of code` and help us `avoid quirky, asynchronous problems` involving state changes.
 
 [>>> 03. displayName](https://github.com/xgirma/react-lifecycles/tree/master/chapters/03)
 
