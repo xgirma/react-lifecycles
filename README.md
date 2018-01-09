@@ -8,3 +8,5 @@ React: Lifecycles methods. Based on [Carl Peaslee](https://www.lynda.com/React-j
 [02. Lifecycle Overview](https://github.com/xgirma/react-lifecycles/tree/master/chapters/02)
 
 [03. displayName](https://github.com/xgirma/react-lifecycles/tree/master/chapters/03)
+
+[04. defaultProps](https://github.com/xgirma/react-lifecycles/tree/master/chapters/04)
