@@ -25,3 +25,4 @@ const Hello = () => {
     ReactDOM.render(<Hello/>, document.getElementById('root'));
 </script>
 ```
+[>>> 02. Virtual DOM](https://github.com/xgirma/react-lifecycles/tree/master/chapters/02)
