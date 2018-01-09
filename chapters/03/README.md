@@ -41,8 +41,8 @@ function Painter (OtherComponent){
 }
 ```
 
-There are two ways we can add `displayName` as shown above, inside and outside of the component or class.  
+There are two ways we can add `displayName` as shown above, inside and outside of the component or class. 
 
-
-
+<img width="1180" alt="screen shot 2018-01-09 at 2 49 02 am" src="https://user-images.githubusercontent.com/5876481/34717396-d097935c-f4e7-11e7-89f0-bf980e3583b0.png">
+ 
 [>>> 04. defaultProps](https://github.com/xgirma/react-lifecycles/tree/master/chapters/04)
