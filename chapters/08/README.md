@@ -37,12 +37,12 @@ here, before we start doing it and the idea is that we are going to look at this
 We're going to inspect its prototype and we're going to loop
 through these methods that we intend to log and then we're actually going to modify each of those individual methods, the ones that are on the prototype, and we're going to change them to add a console.log to them, but then we're also going to make sure that we call the original one, so that the component still functions.
 
-```javascript
+```diff
 function loggify (Wrapped){
 
-  let originals = {};
++  let originals = {};
 
-  const methodsToLog = ["componentWillMount"];
++  const methodsToLog = ["componentWillMount"];
 
   return class extends React.Component {
     static displayName = "~Loggify~";
