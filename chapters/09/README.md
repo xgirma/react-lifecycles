@@ -1,6 +1,6 @@
 # 09.  modifying the prototype
 
-[08. componentWillMount](https://github.com/xgirma/react-lifecycles/tree/master/chapters/08)
+[<<< 08. componentWillMount](https://github.com/xgirma/react-lifecycles/tree/master/chapters/08)
 
 So as I
 mentioned in the last video,
@@ -30,80 +30,68 @@ We're going to call methods to log
 that for each, so for each is
 a method that's available on an array.
 
+```diff
+function loggify(Wrapped) {
 
-And it'll be called once for
-each element in the array.
-And then we're going to name each of those
-elements in the array "method".
+  let originals = {};
 
-That's how we will refer
-to them within this loop.
+  const methodsToLog = ["componentWillMount"];
 
-And we'll make an arrow function
-and this is the arrow function
-that's going to be called
-for each element in the array.
++  methodsToLog.forEach((method) => {
++
++    if (Wrapped.prototype[method]) {
++      originals[method] = Wrapped.prototype[method]
++    }
++
++    Wrapped.prototype[method] = function (...args) {
++      let original = originals[method];
++
++      console.groupCollapsed(`${Wrapped.displayName} called ${method}`);
++      console.groupEnd();
++
++      if (original) {
++        original = original.bind(this);
++        return original(...args)
++      }
++    };
++  });
 
-And now we're going to
-make an "if statement"
-and we're going to say,
-"if, wrapped, that prototype,
-bracket, method,
-then originals,
-bracket, method,
-equals, wrapped, that prototype,
-bracket, method.
+  return class extends React.Component {
+    static displayName = "~Loggify~";
 
+    render() {
+      return (
+        <LoggerContainer>
+          <H2>
+            {Wrapped.displayName} is now loggified:
+          </H2>
+          <Wrapped {...this.props}/>
+        </LoggerContainer>
+      )
+    }
+  }
+}
 
-Okay, so this is maybe a little confusing.
-And I'm going to explain
-what's happening here.
-Essentially what we're saying,
-we'll add some spaces to make this
-a little bit easier to read.
-We're saying, okay, go through all
-of the methods to log that
-we've put in this array.
+const LoggerContainer = styled.default.div`
+  background-color: aliceblue;
+  boarder: 2px grooved aquamarine;
+  border-radious: 5px;
+`;
 
+LoggerContainer.displayName = "~LoggerContainer~";
 
-Now look at our original
-wrapped prototype,
-oops we have a small typo here.
+const H2 = styled.default.h2`
+  color: blueviolet
+`;
 
+H2.displayName = "~H2~";
+```
 
-Look at all of the methods
-on the prototype of wrapped
-so that original wrapped component.
+<img width="1188" alt="screen shot 2018-01-10 at 2 48 35 am" src="https://user-images.githubusercontent.com/5876481/34768810-d1d8f6f6-f5b0-11e7-80b6-5436159604af.png">
 
-Look at each of the
-methods on it's prototype.
+[>>> 10. render](https://github.com/xgirma/react-lifecycles/tree/master/chapters/10)
 
-And if you find one, with on of the names
-that we've listed on this array,
-then just copy it into
-this originals object.
-
-
-Alright, so that's all we're doing here
-on lines 12 through 16.
-
-The next part, we're going to replace
-the function that we just
-copied off the original.
-
-We're going to replace it with a new one
-that we're going to write now.
-
-That's going to have all
-of the old functionality
-because remember we preserved
-the old functionality
-
-by saving it onto this originals object.
-And then we're going to add a
-little bit of new functionality.
-
-
+## TL;DR
 In our case, we're just going
 to console log something.
 
@@ -279,63 +267,74 @@ it calls that out for us.
 So now we have our first life cycle method
 being logged by our logger.
 
-```diff
-function loggify(Wrapped) {
+And it'll be called once for
+each element in the array.
+And then we're going to name each of those
+elements in the array "method".
 
-  let originals = {};
+That's how we will refer
+to them within this loop.
 
-  const methodsToLog = ["componentWillMount"];
+And we'll make an arrow function
+and this is the arrow function
+that's going to be called
+for each element in the array.
 
-+  methodsToLog.forEach((method) => {
-+
-+    if (Wrapped.prototype[method]) {
-+      originals[method] = Wrapped.prototype[method]
-+    }
-+
-+    Wrapped.prototype[method] = function (...args) {
-+      let original = originals[method];
-+
-+      console.groupCollapsed(`${Wrapped.displayName} called ${method}`);
-+      console.groupEnd();
-+
-+      if (original) {
-+        original = original.bind(this);
-+        return original(...args)
-+      }
-+    };
-+  });
+And now we're going to
+make an "if statement"
+and we're going to say,
+"if, wrapped, that prototype,
+bracket, method,
+then originals,
+bracket, method,
+equals, wrapped, that prototype,
+bracket, method.
 
-  return class extends React.Component {
-    static displayName = "~Loggify~";
 
-    render() {
-      return (
-        <LoggerContainer>
-          <H2>
-            {Wrapped.displayName} is now loggified:
-          </H2>
-          <Wrapped {...this.props}/>
-        </LoggerContainer>
-      )
-    }
-  }
-}
+Okay, so this is maybe a little confusing.
+And I'm going to explain
+what's happening here.
+Essentially what we're saying,
+we'll add some spaces to make this
+a little bit easier to read.
+We're saying, okay, go through all
+of the methods to log that
+we've put in this array.
 
-const LoggerContainer = styled.default.div`
-  background-color: aliceblue;
-  boarder: 2px grooved aquamarine;
-  border-radious: 5px;
-`;
 
-LoggerContainer.displayName = "~LoggerContainer~";
+Now look at our original
+wrapped prototype,
+oops we have a small typo here.
 
-const H2 = styled.default.h2`
-  color: blueviolet
-`;
 
-H2.displayName = "~H2~";
-```
+Look at all of the methods
+on the prototype of wrapped
+so that original wrapped component.
 
-<img width="1188" alt="screen shot 2018-01-10 at 2 48 35 am" src="https://user-images.githubusercontent.com/5876481/34768810-d1d8f6f6-f5b0-11e7-80b6-5436159604af.png">
+Look at each of the
+methods on it's prototype.
 
-[10. render](https://github.com/xgirma/react-lifecycles/tree/master/chapters/10)
+And if you find one, with on of the names
+that we've listed on this array,
+then just copy it into
+this originals object.
+
+
+Alright, so that's all we're doing here
+on lines 12 through 16.
+
+The next part, we're going to replace
+the function that we just
+copied off the original.
+
+We're going to replace it with a new one
+that we're going to write now.
+
+That's going to have all
+of the old functionality
+because remember we preserved
+the old functionality
+
+by saving it onto this originals object.
+And then we're going to add a
+little bit of new functionality.
