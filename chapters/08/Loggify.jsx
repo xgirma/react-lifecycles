@@ -1,4 +1,9 @@
 function loggify (Wrapped){
+
+  let originals = {};
+
+  const methodsToLog = ["componentWillMount"];
+
   return class extends React.Component {
     static displayName = "~Loggify~";
 
