@@ -51,4 +51,4 @@ One thing that I want to call out again is that the `defaultProps` aren't necess
 
 <img width="1178" alt="screen shot 2018-01-09 at 3 15 42 am" src="https://user-images.githubusercontent.com/5876481/34718458-8cfcb6c8-f4eb-11e7-99a4-fff90d284fff.png">
 
-[>>> 04. Initial state](https://github.com/xgirma/react-lifecycles/tree/master/chapters/04)
+[>>> 05. Initial state](https://github.com/xgirma/react-lifecycles/tree/master/chapters/05)

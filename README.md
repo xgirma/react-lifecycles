@@ -14,3 +14,5 @@ React: Lifecycles methods. Based on [Carl Peaslee](https://www.lynda.com/React-j
 [05. initial state](https://github.com/xgirma/react-lifecycles/tree/master/chapters/05)
 
 [06. constructor](https://github.com/xgirma/react-lifecycles/tree/master/chapters/06)
+
+[07. creating your logger](https://github.com/xgirma/react-lifecycles/tree/master/chapters/07)
