@@ -1,4 +1,4 @@
-# 06. creating your logger
+# 07. creating your logger
 
 [<<< 06. constructor](https://github.com/xgirma/react-lifecycles/tree/master/chapters/05)
 
