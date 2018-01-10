@@ -1,3 +1,4 @@
+# 10. render
 [<<< 09. modifying the prototype](https://github.com/xgirma/react-lifecycles/tree/master/chapters/09)
 
 So unlike componentWillMount, which is perhaps the least used of the React lifecycle methods, **render is definitely the most used**. 
