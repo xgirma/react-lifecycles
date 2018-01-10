@@ -16,3 +16,7 @@ React: Lifecycles methods. Based on [Carl Peaslee](https://www.lynda.com/React-j
 [06. constructor](https://github.com/xgirma/react-lifecycles/tree/master/chapters/06)
 
 [07. creating your logger](https://github.com/xgirma/react-lifecycles/tree/master/chapters/07)
+
+[08. componentWillMount](https://github.com/xgirma/react-lifecycles/tree/master/chapters/08)
+
+[09. modifying the prototype](https://github.com/xgirma/react-lifecycles/tree/master/chapters/09)
