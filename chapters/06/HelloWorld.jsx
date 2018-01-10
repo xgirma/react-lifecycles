@@ -18,11 +18,12 @@ class Hello extends React.Component {
   };
 
   render() {
-    return <div>
-      Hello Mr. {this.state.last}, {this.props.name} {this.props.middle}
-      <button onClick={this.oldSchoolFunction}>Old School</button>
-      <button onClick={this.newSchoolFunction}>New School</button>
-      </div>
+    return (
+      <div>
+        Hello Mr. {this.state.last}, {this.props.name} {this.props.middle}
+        <button onClick={this.oldSchoolFunction}>Old School</button>
+        <button onClick={this.newSchoolFunction}>New School</button>
+      </div>)
   }
 }
 
