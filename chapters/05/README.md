@@ -1,6 +1,6 @@
 # 05. initial state
 
-[04. defaultProps](https://github.com/xgirma/react-lifecycles/tree/master/chapters/04)
+[<<< 04. defaultProps](https://github.com/xgirma/react-lifecycles/tree/master/chapters/04)
 
 History: there used to be a React method that called `initial state` and would actually set your component's initial state. depreciated.
 
@@ -61,4 +61,4 @@ One other thing that I want to point out is that in **the constructor method is 
 
 So, now we have a good idea of how we can effect the initial state of our component.
 
-[06. constructor](https://github.com/xgirma/react-lifecycles/tree/master/chapters/06)
+[>>> 06. constructor](https://github.com/xgirma/react-lifecycles/tree/master/chapters/06)

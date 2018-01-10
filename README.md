@@ -3,12 +3,14 @@ React: Lifecycles methods. Based on [Carl Peaslee](https://www.lynda.com/React-j
 
 ## Chapters
 
-[01. Higher Order Component](https://github.com/xgirma/react-lifecycles/tree/master/chapters/01)
+[01. higher order component](https://github.com/xgirma/react-lifecycles/tree/master/chapters/01)
 
-[02. Lifecycle Overview](https://github.com/xgirma/react-lifecycles/tree/master/chapters/02)
+[02. lifecycle overview](https://github.com/xgirma/react-lifecycles/tree/master/chapters/02)
 
 [03. displayName](https://github.com/xgirma/react-lifecycles/tree/master/chapters/03)
 
 [04. defaultProps](https://github.com/xgirma/react-lifecycles/tree/master/chapters/04)
 
 [05. initial state](https://github.com/xgirma/react-lifecycles/tree/master/chapters/05)
+
+[06. constructor](https://github.com/xgirma/react-lifecycles/tree/master/chapters/06)
