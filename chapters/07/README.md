@@ -15,7 +15,8 @@ Laying out the logger framework.
   <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
-+  <script src="https://cdnjs.cloudflare.com/ajax/libs/styled-components/2.4.0/styled-components.js"></script>
++  <script src="https://cdnjs.cloudflare.com/ajax/libs/styled-components/2.4.0/styled-components.js">
+        </script>
 
   <script src="App.jsx" type="text/jsx" data-presets="es2015,react"></script>
   <script src="Loggify.jsx" type="text/jsx" data-presets="es2015,react"></script>
@@ -34,7 +35,7 @@ Laying out the logger framework.
 
 </html>
 ``` 
-
+App.jsx
 ```html
 class App extends React.Component {
   render() {
@@ -45,6 +46,10 @@ class App extends React.Component {
 App. displayName = "~Application~";
 ```
 
+## styled components 
+styled components allow us to do is you use a template literal with CSS rules, to make a react component that has all of those rules applied as a class name to that specific component.
+
+Loggify.jsx
 ```javascript
 function loggify (Wrapped){
   return class extends React.Component {
