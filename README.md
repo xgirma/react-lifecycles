@@ -22,3 +22,5 @@ React: Lifecycles methods. Based on [Carl Peaslee](https://www.lynda.com/React-j
 [09. modifying the prototype](https://github.com/xgirma/react-lifecycles/tree/master/chapters/09)
 
 [10. render](https://github.com/xgirma/react-lifecycles/tree/master/chapters/10)
+
+[11. componentWillUnmount](https://github.com/xgirma/react-lifecycles/tree/master/chapters/11)

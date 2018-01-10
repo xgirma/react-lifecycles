@@ -1,4 +1,4 @@
-[09. modifying the prototype](https://github.com/xgirma/react-lifecycles/tree/master/chapters/09)
+[<<< 09. modifying the prototype](https://github.com/xgirma/react-lifecycles/tree/master/chapters/09)
 
 So unlike componentWillMount, which is perhaps the least used of the React lifecycle methods, **render is definitely the most used**. 
 
@@ -23,4 +23,4 @@ I know that I said in the previous video it's actually not a great idea to rende
 
 All right, so that concludes our discussion about render. We will talk about render a bit more when we get into our update lifecycle methods, because render actually is unique in that, it occurs both in the mounting lifecycle methods and in the updating lifecycle methods. So learn to love it, and we will talk about render again in a little bit.
 
-[11. 16-componentDidMount](https://github.com/xgirma/react-lifecycles/tree/master/chapters/11)
+[>>> 11. componentDidMount](https://github.com/xgirma/react-lifecycles/tree/master/chapters/11)
