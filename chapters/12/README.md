@@ -209,4 +209,4 @@ Alright, let's save this, and go back to the browser, and we'll click show `poll
 
 > So I hope you can see from this example how componentWillUnmount is a great opportunity to make sure that your application continues to function in a performant manner, by `cleaning up any unneeded processes`.
 
-[>>> 13. cleaning up intervals](https://github.com/xgirma/react-lifecycles/tree/master/chapters/13)
+[>>> 13. setState](https://github.com/xgirma/react-lifecycles/tree/master/chapters/13)
