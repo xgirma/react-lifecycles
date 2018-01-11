@@ -4,4 +4,4 @@ class App extends React.Component {
   }
 }
 
-App. displayName = "~Application~";
+App.displayName = "~Application~";

@@ -23,4 +23,6 @@ React: Lifecycles methods. Based on [Carl Peaslee](https://www.lynda.com/React-j
 
 [10. render](https://github.com/xgirma/react-lifecycles/tree/master/chapters/10)
 
-[11. componentWillUnmount](https://github.com/xgirma/react-lifecycles/tree/master/chapters/11)
+[11. componentDidMount](https://github.com/xgirma/react-lifecycles/tree/master/chapters/11)
+
+[12. cleaning up intervals](https://github.com/xgirma/react-lifecycles/tree/master/chapters/12)
