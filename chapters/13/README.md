@@ -123,7 +123,7 @@ Okay, and so if you're curious where I got this information, I got this from loo
 
 So let's save this, and let's see how it takes effect on our webpage.
 
-![ezgif com-video-to-gif 2](https://user-images.githubusercontent.com/5876481/34870100-eee9b012-f73d-11e7-82a6-35076b859ad1.gif | width="1582")
+![ezgif com-video-to-gif 2](https://user-images.githubusercontent.com/5876481/34870100-eee9b012-f73d-11e7-82a6-35076b859ad1.gif =1582x)
 
 Alright, if we refresh the page, we can see, cool, when our app called setState, it actually logged it for us, and we got to see what the **partialState** change was going to be, and then if we do show PollChild, we can see that once again that setState appeared in our log and each of these individual ones that are being called every time our Child polls are also being called. Okay, great, so now we have setState inside of our logger, and we have a little bit more idea about the expanded syntax that we can use with setState. And in the next few videos, we're going to be talking about what happens after you set the state, what happens after you make a change to your component and how it updates.
 
