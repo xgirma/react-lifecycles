@@ -28,3 +28,5 @@ React: Lifecycles methods. Based on [Carl Peaslee](https://www.lynda.com/React-j
 [12. cleaning up intervals](https://github.com/xgirma/react-lifecycles/tree/master/chapters/12)
 
 [13. setState](https://github.com/xgirma/react-lifecycles/tree/master/chapters/13)
+
+[14. componentWillReceiveProps](https://github.com/xgirma/react-lifecycles/tree/master/chapters/14)
