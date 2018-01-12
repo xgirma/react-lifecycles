@@ -41,6 +41,7 @@ class App extends React.Component {
           this.setState((prevState) => {
             return { showPollChild: !showPollChild }
           });
+          {console.log(this.state.data)}
         }}>
           {(showPollChild) ? "Hide" : "Show"} PollChild
         </button>
