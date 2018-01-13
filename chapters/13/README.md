@@ -127,6 +127,4 @@ So let's save this, and let's see how it takes effect on our webpage.
 
 Alright, if we refresh the page, we can see, cool, when our app called setState, it actually logged it for us, and we got to see what the **partialState** change was going to be, and then if we do show PollChild, we can see that once again that setState appeared in our log and each of these individual ones that are being called every time our Child polls are also being called. Okay, great, so now we have setState inside of our logger, and we have a little bit more idea about the expanded syntax that we can use with setState. And in the next few videos, we're going to be talking about what happens after you set the state, what happens after you make a change to your component and how it updates.
 
-
-
 [>>> 14. componentWillReceiveProps](https://github.com/xgirma/react-lifecycles/tree/master/chapters/14)
