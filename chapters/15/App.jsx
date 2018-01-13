@@ -30,7 +30,7 @@ class App extends React.Component {
   createParentPoll = () => {
     this.pollInterval = setInterval(
       () => {
-        this.setState({parentPoll: getRandomInit(1,5)})
+        this.setState({parentPoll: getRandomInit(1,2)})
       }, 1000
     )
   };
@@ -74,11 +74,23 @@ class PollChild extends React.Component {
   };
 
   componentDidMount(){
-    this.pollData();
+    // this.pollData();
   };
 
   componentWillUnmount(){
     clearInterval(this.pollInterval);
+  }
+
+  shouldComponentUpdate(nextProps, nextState){
+    if(nextProps.parentPoll !== this.props.parentPoll){
+      return true
+    }
+
+    if(nextState.poll !== this.state.poll){
+      return true
+    }
+
+    return false;
   }
 
   pollData = () => {
@@ -86,13 +98,14 @@ class PollChild extends React.Component {
       () => {
         console.log('Poll');
         this.setState({
-          poll: Math.random()
+          poll: getRandomInit(1,4)
         })
       }, 1000
     )
   };
 
   render(){
+    console.log("pollChild re-render");
     return (
       <div>
         <h4>poll: {this.state.poll}</h4>
