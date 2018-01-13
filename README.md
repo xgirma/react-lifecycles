@@ -32,3 +32,7 @@ React: Lifecycles methods. Based on [Carl Peaslee](https://www.lynda.com/React-j
 [14. componentWillReceiveProps](https://github.com/xgirma/react-lifecycles/tree/master/chapters/14)
 
 [15. logging shouldComponentUpdate](https://github.com/xgirma/react-lifecycles/tree/master/chapters/15)
+
+[16. componentWillupdate](https://github.com/xgirma/react-lifecycles/tree/master/chapters/16)
+
+[17. componentWillupdate](https://github.com/xgirma/react-lifecycles/tree/master/chapters/17)
